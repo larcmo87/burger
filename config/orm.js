@@ -25,9 +25,9 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-
+//OBJECT RELATION MANAGER
 var ORM = {
-
+	//QUREY FOR ALL DATA
 	selectAll: function(table, callBack){
 		var queryString = "SELECT * FROM " + table + ";";
 		connection.query(queryString, function(err, result){
@@ -38,6 +38,7 @@ var ORM = {
 		});
 
 	},
+	//INSERT QUERY
 	insertOne: function(table, columns, values, callBack){
 		var queryString = "INSERT INTO " + table + " (" + columns.toString() + ") VALUES (" + printQuestionMarks(values.length) + ")";
 		connection.query(queryString,values,function(err,result){
@@ -47,6 +48,8 @@ var ORM = {
 			callBack(result);
 		});
 	},
+
+	//UPDATE QUERY
 	updateOne: function(table, colummValues, condition, callBack){
 		var queryString = "UPDATE " + table;
 
