@@ -1,0 +1,82 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eat-Da-Burger</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap File -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   
+   <!-- JQuery File -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Cascading Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/burger_style.css">
+
+
+</head>
+<body>
+	<div class="container-fluid">
+		<!-- <header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">						
+						<img src="https://media1.giphy.com/media/ToMjGplHPoYqSg7oACc/200w.webp#41-grid1" id="burgerImage" class="center">
+						<div id="eat-da-burger-marquee" class="center">Eat-Da-Burger</div>					
+					</div>
+				</div>				
+			</div>
+		</header> -->
+
+		<div class="container">
+			<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">						
+						<img src="https://media1.giphy.com/media/ToMjGplHPoYqSg7oACc/200w.webp#41-grid1" id="burgerImage"><!-- class="center" -->
+						<div id="eat-da-burger-marquee">Eat-Da-Burger</div>					
+					</div>
+				</div>	
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+				<ul class="burgers-to-devoure">
+						<li>
+							 <form action="/{{this.id}}?_method=PUT" method="POST" class="devoure-form">
+							 <input type="text" name="burger-to-be-devoured" value="test1">	
+							 			         
+					         <button type="button" class="devour-btn">test1</button>
+					        </form>							
+						</li>
+							
+						<li> <form action="/{{this.id}}?_method=PUT" method="POST" class="devoure-form">
+							 <input type="text" name="burger-to-be-devoured" value="test2">	
+							 			         
+					         <button type="button" class="devour-btn">test2</button>
+					        </form>	</li>
+						
+				</ul>
+					<!-- <div class="burgers-to-devoure"> <h4>test1</h4><button type="button">test1</button></div>
+					<div class="burgers-to-devoure"> <h4>test2</h4> <button type="button">test2</button></div> -->
+											
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 center">	
+					<div>test1</div>
+					<div>test2</div>								
+				</div>
+			</div>		
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
+										
+					<form  class="center">
+					  <input type="text" name="burger_type"><br>
+					  
+					  <input type="submit" value="Submit">
+					</form>									
+				</div>
+			</div>				
+		</div>
+
+
+	</div>
+</body>
+</html>

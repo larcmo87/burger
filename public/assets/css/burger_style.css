@@ -1,0 +1,91 @@
+body{
+	background-color: #FF8000;
+}
+h4{
+	color:white;
+}
+
+li {
+  padding: 0px;
+  margin: 5px;
+  
+}
+.row{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+.center{
+	
+	display: block;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+ .burger-name{
+ 	width: 350px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+ .burgers-to-devoure{
+	list-style: none;
+	float:right;
+	display:inline-block;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+.burgers-devoured{
+	list-style: none;
+	float:left;
+	display:inline-block;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+.burgers-to-devoure.li.div{
+	float:left;
+	display:inline;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+.devoure-list{
+	float:right;
+	display:inline;
+}
+.devoure-form{
+	margin: 0;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
+
+.devour-btn{
+	margin-left: 20px;
+}
+
+#submit-btn{
+	margin-top: 10px;
+}
+#burgerImage{
+  display: block;
+  width: 100px;
+  height: 150px;
+  margin: auto;
+}
+
+#eat-da-burger-marquee{	
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom:0px;
+}
